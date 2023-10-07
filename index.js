@@ -21,7 +21,7 @@ const server = app.listen(PORT || 3000, () => {
   cronJob.schedule(
     CRON_JOB_SCHEDULE,
     () => {
-      axios.get("http://localhost:3000/get-notifications");
+      axios.get("https://dark-gold-cheetah-wear.cyclic.app/get-notifications");
     },
     {
       scheduled: true,
